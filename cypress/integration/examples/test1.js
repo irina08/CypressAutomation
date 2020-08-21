@@ -15,5 +15,16 @@ describe('My First Test Suite', () => {
 
     //element with second index ad to cart
     cy.get('.products').find('.product').eq(2).contains('ADD TO CART').click();
+
+    //for loop - add to cart Cashews (not depend on place of Cashews)
+    cy.get('.products').find('.product').each(($el, index, $list) => {
+      const textVeg = $el.find('h4.product-name').text();
+      if(textVeg.includes('Cashews')) {
+        const bt = $el.find('button');
+        cy.wrap(bt).click();
+      }
+    })
+
   })
+
 })
