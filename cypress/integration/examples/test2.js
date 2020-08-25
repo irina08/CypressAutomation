@@ -17,7 +17,13 @@ describe('Proceed to checkout Test Suite', () => {
       }
     })
 
+    cy.get('.cart-icon > img').click();
 
+    cy.contains('PROCEED TO CHECKOUT').click();
+    //cy.get('.cart-preview > .action-block > button').click();
+
+    //cy.wait(2000);
+    cy.contains('Place Order').click();
   })
   
 })
