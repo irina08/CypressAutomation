@@ -34,6 +34,12 @@ describe('My First Test Suite', () => {
       }
     })
 
+    //promise
+    //this is to print in logs
+    cy.get('.brand').then((logoelement) => {
+      cy.log(logoelement.text());
+    });
+
 
   })
 
