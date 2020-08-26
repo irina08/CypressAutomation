@@ -40,6 +40,8 @@ describe('My First Test Suite', () => {
       cy.log(logoelement.text());
     });
 
+    //assert if logo text is correctly displayed
+    cy.get('.brand').should('have.text','GREENKART');
 
   })
 
