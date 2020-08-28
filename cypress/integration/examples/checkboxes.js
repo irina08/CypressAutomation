@@ -9,7 +9,8 @@ describe('CheckBox Test Suite', () => {
   //uncheck checkbox
     cy.get('#checkBoxOption1').uncheck().should('not.be.checked');
 
-
+  //multiple checkboxes in one time - locator common for all checkboxes
+    cy.get('input[type="checkbox"]').check(['option2', 'option3']);
 
   })
 
