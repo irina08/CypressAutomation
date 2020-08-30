@@ -9,6 +9,7 @@
   "author": "Irina Golovko",
   "license": "ISC",
   "devDependencies": {
-    "cypress": "^4.12.1"
+    "cypress": "^4.12.1",
+    "cypress-iframe": "^1.0.1"
   }
 }
