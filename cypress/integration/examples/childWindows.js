@@ -8,6 +8,9 @@ describe('Child Windows Test Suite', () => {
     cy.get('#opentab').then(function(el) {
       const url = el.prop('href');
 
+      //doesn't work
+      cy.visit(url);
+
     });
 
   });
