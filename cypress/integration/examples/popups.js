@@ -17,6 +17,11 @@ describe('Popups Test Suite', () => {
       expect(str).to.equal('Hello , Are you sure you want to confirm?');
     });
 
+  //removeAttr in order to open page in the same window
+    cy.get('#opentab').invoke('removeAttr', 'target').click();
+
+    cy.url().should('include', 'rahulshettyacademy');
+
 
 
   });
