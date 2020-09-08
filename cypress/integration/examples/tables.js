@@ -14,7 +14,7 @@ describe('Tables Test Suite', () => {
           const priceText = price.text();
           expect(priceText).to.equal('25');
         });
-      }
+      };
 
     });
 
