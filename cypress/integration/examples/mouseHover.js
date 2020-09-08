@@ -14,7 +14,9 @@ describe('Mouse Hover Test Suite', () => {
     cy.url().should('include', 'top');
     */
 
-
+    //second case
+    cy.contains('Top').click({force: true});
+    cy.url().should('include', 'top');
 
   });
 
