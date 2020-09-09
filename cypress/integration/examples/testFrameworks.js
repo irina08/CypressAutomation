@@ -12,9 +12,11 @@ describe('Block Test Suite', () => {
     cy.visit("https://rahulshettyacademy.com/angularpractice/");
 
     //cy.get('input[name="name"]:nth-child(2)').type('Bob');
-
+    cy.get('input[name="name"]:nth-child(2)').type(this.data.name);
 
     //cy.get('select').select('Female');
+    cy.get('select').select(this.data.gender);
+
 
   });
 
