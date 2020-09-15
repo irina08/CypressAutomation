@@ -34,7 +34,10 @@ describe('Block Test Suite', () => {
 
          */
 
-
+    //using array in json file
+    this.data.productName.forEach(function(element) {
+      cy.selectProduct(element);
+    });
 
   });
 
