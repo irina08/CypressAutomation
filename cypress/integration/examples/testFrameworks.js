@@ -28,6 +28,12 @@ describe('Block Test Suite', () => {
           }
         }); */
 
+    /*
+             cy.selectProduct('Blackberry');
+             cy.selectProduct('Nokia Edge');
+
+         */
+
 
 
   });
