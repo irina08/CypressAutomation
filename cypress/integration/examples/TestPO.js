@@ -19,6 +19,10 @@ describe('Page Object Test Suite', () => {
     //cy.visit("https://rahulshettyacademy.com/angularpractice/");
     cy.visit(Cypress.env('url') + '/angularpractice/');
 
+    homePage.getEditBox().type(this.data.name);
+    homePage.getGender().select(this.data.gender);
+    homePage.getTwoWayDataBinding().should('have.value', this.data.name);
+
 
   });
 
