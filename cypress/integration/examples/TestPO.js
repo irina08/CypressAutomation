@@ -11,6 +11,15 @@ describe('Page Object Test Suite', () => {
 
   });
 
+  it('PO example', function () {
+    //Cypress.config('defaultCommandTimeout', 15000);
+    const homePage = new HomePage();
+    const productPage = new ProductPage();
 
+    //cy.visit("https://rahulshettyacademy.com/angularpractice/");
+    cy.visit(Cypress.env('url') + '/angularpractice/');
+
+
+  });
 
 });
