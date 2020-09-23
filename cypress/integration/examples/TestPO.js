@@ -26,6 +26,10 @@ describe('Page Object Test Suite', () => {
     homePage.getEntrepreneaur().should('be.disabled');
     homePage.getShopTab().click();
 
+    this.data.productName.forEach(function(element) {
+      cy.selectProduct(element);
+    });
+
 
   });
 
