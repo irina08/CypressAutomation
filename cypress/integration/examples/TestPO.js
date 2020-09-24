@@ -32,6 +32,17 @@ describe('Page Object Test Suite', () => {
 
     productPage.checkoutButton().click();
 
+    let sum = 0;
+    cy.get('tr td:nth-child(4) strong').each(($el, index, $list) => {
+      const amountText = $el.text();
+      let res = amountText.split(" ");
+      res = res[1].trim();
+      sum = sum + Number(res);
+    }).then(() => {
+      cy.log(sum);
+    });
+
+
 
   });
 
