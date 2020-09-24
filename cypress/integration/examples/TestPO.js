@@ -30,6 +30,8 @@ describe('Page Object Test Suite', () => {
       cy.selectProduct(element);
     });
 
+    productPage.checkoutButton().click();
+
 
   });
 
