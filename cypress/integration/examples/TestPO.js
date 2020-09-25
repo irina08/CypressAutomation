@@ -49,6 +49,11 @@ describe('Page Object Test Suite', () => {
       expect(Number(total)).to.equal(sum);
     });
 
+    cy.contains('Checkout').click();
+    cy.get('#country').type('India');
+    cy.get('.suggestions > ul > li > a').click();
+
+
 
   });
 
