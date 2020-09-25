@@ -42,6 +42,12 @@ describe('Page Object Test Suite', () => {
       cy.log(sum);
     });
 
+    cy.get('h3 strong').then((element) => {
+      const amount = element.text();
+      let result = amount.split(" ");
+      let total = result[1].trim();
+      expect(Number(total)).to.equal(sum);
+    });
 
 
   });
