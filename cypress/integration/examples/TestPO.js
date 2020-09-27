@@ -53,6 +53,8 @@ describe('Page Object Test Suite', () => {
     cy.get('#country').type('India');
     cy.get('.suggestions > ul > li > a').click();
 
+    cy.get('#checkbox2').click({force: true});
+    cy.get('input[type="submit"]').click();
 
 
   });
