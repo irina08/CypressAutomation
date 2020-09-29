@@ -56,8 +56,10 @@ describe('Page Object Test Suite', () => {
     cy.get('input[type="submit"]').click();
 
     //cy.get('.alert').should('have.text', 'Success! Thank you! Your order will be delivered in next few weeks :-)');
-
-
+    cy.get('.alert').then((element) => {
+      const actualText = element.text();
+      expect(actualText.includes("Success")).to.be.true;
+    })
   });
 
 });
