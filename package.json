@@ -9,7 +9,7 @@
     "chromeTest": "./node_modules/.bin/cypress run --browser chrome --parallel",
     "recordDashBoardTest":  "./node_modules/.bin/cypress run --record --key e502bd51-f2b4-403b-94cd-695b039f23a9 --reporter mochawesome",
     "GreenCartTest": "./node_modules/.bin/cypress run --spec 'cypress/integration/GreenCart/*'",
-
+    "GreenCartTestDashBoard": "./node_modules/.bin/cypress run --spec 'cypress/integration/GreenCart/*' --record --key e502bd51-f2b4-403b-94cd-695b039f23a9 --reporter mochawesome"
   },
   "author": "Irina Golovko",
   "license": "ISC",
