@@ -6,5 +6,8 @@
   "env": {
     "url": "https://rahulshettyacademy.com"
   },
+  "retries": {
+    "runMode": 1
+  },
   "projectId": "du5knh"
 }
