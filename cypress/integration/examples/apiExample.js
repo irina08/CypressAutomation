@@ -17,7 +17,9 @@ describe('API test', () => {
       delay: 1000
     }).as('UpdateComment');
 
+    cy.get('.network-put').click();
 
+    cy.get('.network-put-comment').should('contain', "Hey. Comment do not exist");
 
   });
 });
